@@ -1,0 +1,52 @@
+# Basic
+title: XCoderLiu's Blog
+subtitle: An iOS developer in China Shenzhen
+welcome_message: <a href="https://github.com/xcoderliu" target="_blank">我的 Github</a>
+description: 吾生也有涯，而知也无涯！
+creator: <a href="http://xcoderliu.xyz">@xcoderliu</a>
+
+url: "http://xcoderliu.xyz"
+
+permalink: /:year/:month/:title/
+
+# Format
+highlighter: plain
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: glass
+
+# The blog button should not be removed.
+blog_button:
+    title: Blog
+    description: Visit blog
+
+# Navigation buttons in the front page.
+nav:
+    - {title: Projects, description: My Projects, url: 'http://github.com/xcoderliu'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo:
+
+# Social
+social:
+    weibo: xcoderliu
+    github: xcoderliu
+    twitter: xcoderliu
+    gplus: 117494192674607753481
+    mail: xcoderliu@gmail.com
+
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
