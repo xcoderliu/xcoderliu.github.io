@@ -5,13 +5,13 @@ tag: OSX
 date: 2017-02-28 22:14:00.000000000 +10:00
 ---
 
-###简介
+### 简介
 这一份教程是关于如何使用最新的 FFmpeg 3.2.4 进行音视频的编解码,以及如何使用 metal 对解码之后的帧数据进行渲染. 感觉现在的 ffmpeg 教程都是基于 2.x 的所以就自己鼓捣了一下,希望和大家一起讨论交流共同进步. 本教程的 [github 源码](https://github.com/xcoderliu/FFmpegMetalPlayer) (运行环境 OSX)也会跟随本教程持续更新.因为作者有全职工作所以不能保证更新进度望大家理解. 本教程也参考了 [kxMovie](https://github.com/kolyvan/kxmovie) 感谢作者.
 
-###音视频基础介绍
+### 音视频基础介绍
 首先,大家需要有一定的基础知识,对于音视频其实大家都知道所谓的视频就是一帧一帧的图片组合而成.随着时间正确的渲染出图片就能播放一个视频. 同样的音频就是在正确的时间播放出对应的声音.在对的时间贴上对的图对的声音就能播放完整的电影了.
 
-###FFmpeg 介绍
+### FFmpeg 介绍
 FFmpeg是一个自由软件，可以运行音频和视频多种格式的录影、转换、流功能[1]，包含了libavcodec——这是一个用于多个项目中音频和视频的解码器库，以及libavformat——一个音频与视频格式转换库。
 “FFmpeg”这个单词中的“FF”指的是“Fast Forward”[2]。有些新手写信给“FFmpeg”的项目负责人，询问FF是不是代表“Fast Free”或者“Fast Fourier”等意思，“FFmpeg”的项目负责人回信说：“Just for the record, the original meaning of "FF" in FFmpeg is "Fast Forward"...”
 这个项目最初是由Fabrice Bellard发起的，而现在是由Michael Niedermayer在进行维护。许多FFmpeg的开发者同时也是MPlayer项目的成员，FFmpeg在MPlayer项目中是被设计为服务器版本进行开发。
@@ -27,7 +27,7 @@ FFmpeg是一个自由软件，可以运行音频和视频多种格式的录影�
 - libpostproc——对于视频做前处理的库
 - libswscale——对于视频作缩放的库
 
-###利用 FFmpeg 视频解码
+### 利用 FFmpeg 视频解码
 在项目中我们可以创建一个负责音视频解码的类,命名为 xxDecoder.mm ,在初始化函数中调用 **av_register_all();** 方法初始化 FFmpeg,然后开始对视频进行编解码.
 
 #### 检测音视频文件是否可以解码

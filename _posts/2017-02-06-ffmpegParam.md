@@ -5,7 +5,7 @@ tag: av
 date: 2017-02-06 22:14:00.000000000 +09:00
 ---
 
-###A 通用选项
+### A 通用选项
 
 ```
 -L | license
@@ -25,7 +25,7 @@ date: 2017-02-06 22:14:00.000000000 +09:00
 -itsoffset offset 设置以秒为基准的时间偏移，该选项影响所有后面的输入文件。该偏移被加到输入文件的时戳，定义一个正偏移意味着相应的流被延迟了 offset秒。 [-]hh:mm:ss[.xxx]的格式也支持
 ```
 
-###B 视频选项
+### B 视频选项
 
 ```
 -b bitrate 设置比特率，缺省200kb/s
@@ -48,7 +48,7 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -passlogfile file 选择两遍的纪录文件名为file
 ```
 
-###C高级视频选项
+### C高级视频选项
 
 ```
 -g gop_size 设置图像组大小
@@ -86,7 +86,7 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -vhook module 插入视频处理模块 module 包括了模块名和参数，用空格分开
 ```
 
-###D音频选项
+### D音频选项
 
 ```
 -ab bitrate 设置音频码率
@@ -96,7 +96,7 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -acodec codec 使用codec编解码
 ```
 
-###E音频/视频捕获选项
+### E音频/视频捕获选项
 
 ```
 -vd device 设置视频捕获设备。比如/dev/video0
@@ -106,7 +106,7 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -av device 设置音频设备 比如/dev/dsp
 ```
 
-###F高级选项
+### F高级选项
 
 ```
 -map file:stream 设置输入流映射

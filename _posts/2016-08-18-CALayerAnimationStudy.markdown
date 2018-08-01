@@ -17,7 +17,7 @@ date: 2016-08-18 15:04:24.000000000 +09:00
 
 不用说，本教程中有很多这样甜蜜的GUI糖， 它应该被认为是某种危险的 - 或者至少是不安全的**放纵**。 👍
 
-##Part 1 — CALayer的不足
+## Part 1 — CALayer的不足
 
 接下来创建一个新的 Xcode 项目。 应该选择 Single-view application 模板, 同时记得选择 **swift** 作为开发语言。 不要在意那些什么选择是否使用 Core Data 之类乱七八糟的复选框, 因为我们现在不需要这些。
 
@@ -250,7 +250,7 @@ UIColor+HexHSB — 用十六进制来设定你的颜色以及色彩饱和度
 
 好像对我来说好像一直挺有用?
 
-##打断一下
+## 打断一下
 
 好了, **CALayer** and **CAShapeLayer** 是两个非常强大而且令人迷惑的 [CoreAnimation](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html) 的组成部分。接下来我会给一个到目前为止实现的一个简单整理:
 
@@ -277,7 +277,7 @@ Home is where the anchor drops（好像是一个电影或者一本书之类的 �
 
 我希望能居中一个 layer 就像居中一个 UIView 那么简单，哎 事实上我不能。
 
-##Part 2 — Stamp your hind legs, get behind me! Animate!
+## Part 2 — Stamp your hind legs, get behind me! Animate!
 
 继续，复制下面的内容到你的类中:
 
@@ -329,7 +329,7 @@ extension FloatingPoint {
 
 你刚刚扩展了 **LZMLayer**， 顺带一提 — 类带有额外的函数性。 一个函数开始动画, 一个结束动画, 还要一个函数在循环中给每一个 layer 生成 **CABasicAnimation** 。🎉
 
-##预备
+## 预备
 
 在我们运行这个 app 来演示动画效果之前。 — 给你的主视图控制器添加下面的代码:
 
@@ -371,7 +371,7 @@ class ViewController: UIViewController {
 
 ```
 
-##打断一下
+## 打断一下
 
 如果我们运行代码将会看到动画顺利的进行了。🎉
 
@@ -402,7 +402,7 @@ rotateParentLayer(toDegree: 60)
 它将会把 parent layer 在 x 轴旋转60°,  再一次运行, 我们将会看到…
 
 
-##Part 3— 牛逼闪闪的 CATransformLayer 
+## Part 3— 牛逼闪闪的 CATransformLayer 
 
 如果你按照上面的修改再运行一次, 最后会变成这个样子:
 
