@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yosemites dark mode
-tag: MacOS
+tag: OSX
 date: 2018-08-21 09:00:00.000000000 +09:00
 ---
 
